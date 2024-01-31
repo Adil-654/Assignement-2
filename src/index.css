@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  background-color: #ffffff;
-  font-synthesis: none;
+  background-color: white;
+  font-synthesis: no  ne;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   font-family: 'PT Sans', sans-serif;
+ 
 }

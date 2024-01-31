@@ -30,7 +30,7 @@ const AudioPlayer = () => {
     }
   }
 
-  function computeProgress(): number {
+  function progress(): number {
     const noProgress =
       currentTrackDuration === null ||
       currentTrackPlaybackPosition === null ||
@@ -44,7 +44,7 @@ const AudioPlayer = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <SongInfo
+      <SongInfo 
         title={currentTrackMetadata?.title}
         artist={currentTrackMetadata?.artist}
         coverArtSrc={currentTrackMetadata?.coverArtSrc}
@@ -53,7 +53,7 @@ const AudioPlayer = () => {
         rightLabel={formatTime(currentTrackDuration)}
         leftLabel={formatTime(currentTrackPlaybackPosition)}
         onChange={setProgress}
-        progress={computeProgress()}
+        progress={progress()}
       />
       <Controls
         shuffle={shuffle}
@@ -65,6 +65,7 @@ const AudioPlayer = () => {
         onPlayClick={togglePlayPause}
         isPlaying={playbackState === 'PLAYING'}
       />
+      
     </div>
   );
 };

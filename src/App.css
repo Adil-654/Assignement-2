@@ -24,7 +24,7 @@
 .slider::-moz-range-thumb {
   height: 19px;
   width: 19px;
-  background-color: white;
+  background-color: bal;
   border-radius: 100%;
   border: #505050 1px solid;
   cursor: pointer;
